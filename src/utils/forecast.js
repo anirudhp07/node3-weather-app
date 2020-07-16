@@ -18,7 +18,8 @@ const forecast = (latitude, longitude ,callback) => {
             else {
                 callback(undefined, 'The current temperature is: ' + body.current.temperature + '.' +
                 'The chance of percipitation is: ' + body.current.precip + '% .' +
-                'Today is: ' + body.current.weather_descriptions[0] )
+                'Today is: ' + body.current.weather_descriptions[0]  + '.' +
+                'The localtime here right now is: ' + body.location.localtime)
                 
             }
         })
